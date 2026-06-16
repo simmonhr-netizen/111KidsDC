@@ -16,65 +16,46 @@ export default function MapView({ places, onSelectPlace, userLocation }: MapView
 
   useEffect(() => {
     if (typeof window === 'undefined' || !mapRef.current) return;
+    if (mapInstanceRef.current) return;
 
-    // Dynamically import Leaflet to avoid SSR issues
     import('leaflet').then((L) => {
-      // Fix default marker icons for Next.js
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      delete (L.Icon.Default.prototype as any)._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
-        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-      });
-
-      if (mapInstanceRef.current) return; // already initialized
+      // Must load Leaflet CSS at runtime to avoid SSR issues
+      if (!document.querySelector('link[href*="leaflet"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        document.head.appendChild(link);
+      }
 
       const map = L.map(mapRef.current!, {
-        center: [38.9072, -77.0369], // Washington DC
-        zoom: 12,
-        zoomControl: true,
+        center: [38.9072, -77.0369],
+        zoom: 13,
+        zoomControl: false, // we'll add it bottom-right
       });
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
+      L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+      // Carto light tiles — cleaner look than OSM default
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/">CARTO</a>',
+        subdomains: 'abcd',
         maxZoom: 19,
       }).addTo(map);
 
       mapInstanceRef.current = map;
 
-      // Add place markers
-      places.forEach((place) => {
-        const customIcon = L.divIcon({
-          html: `<div class="map-pin" data-number="${place.bookNumber}">
-            <div class="pin-bubble">
-              <span class="pin-number">${place.bookNumber}</span>
-            </div>
-            <div class="pin-tip"></div>
-          </div>`,
-          className: '',
-          iconSize: [36, 44],
-          iconAnchor: [18, 44],
-          popupAnchor: [0, -44],
-        });
+      // Add markers
+      addMarkers(L, map, places, onSelectPlace);
 
-        const marker = L.marker([place.latitude, place.longitude], { icon: customIcon })
-          .addTo(map)
-          .on('click', () => onSelectPlace(place));
-
-        markersRef.current.push(marker);
-      });
-
-      // Add user location marker if available
       if (userLocation) {
         const userIcon = L.divIcon({
-          html: `<div class="user-pin">📍</div>`,
+          html: `<div style="font-size:28px;line-height:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4))">📍</div>`,
           className: '',
-          iconSize: [30, 30],
-          iconAnchor: [15, 30],
+          iconSize: [28, 28],
+          iconAnchor: [14, 28],
         });
         L.marker(userLocation, { icon: userIcon }).addTo(map);
-        map.setView(userLocation, 13);
+        map.setView(userLocation, 14);
       }
     });
 
@@ -88,66 +69,57 @@ export default function MapView({ places, onSelectPlace, userLocation }: MapView
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Update markers when places change (e.g. filters)
+  // Re-render markers when places/filters change
   useEffect(() => {
     if (!mapInstanceRef.current) return;
     import('leaflet').then((L) => {
-      // Remove old markers
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
-
-      // Add filtered markers
-      places.forEach((place) => {
-        const customIcon = L.divIcon({
-          html: `<div class="map-pin">
-            <div class="pin-bubble">
-              <span class="pin-number">${place.bookNumber}</span>
-            </div>
-            <div class="pin-tip"></div>
-          </div>`,
-          className: '',
-          iconSize: [36, 44],
-          iconAnchor: [18, 44],
-        });
-
-        const marker = L.marker([place.latitude, place.longitude], { icon: customIcon })
-          .addTo(mapInstanceRef.current!)
-          .on('click', () => onSelectPlace(place));
-
-        markersRef.current.push(marker);
-      });
+      addMarkers(L, mapInstanceRef.current!, places, onSelectPlace);
     });
   }, [places, onSelectPlace]);
 
+  function addMarkers(
+    L: typeof import('leaflet'),
+    map: L.Map,
+    placesToAdd: Place[],
+    onSelect: (p: Place) => void
+  ) {
+    placesToAdd.forEach((place) => {
+      const icon = L.divIcon({
+        html: `<div style="
+          background:#10b981;
+          border:2.5px solid white;
+          border-radius:50%;
+          width:34px;
+          height:34px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          box-shadow:0 2px 8px rgba(0,0,0,0.3);
+          cursor:pointer;
+          font-size:11px;
+          font-weight:700;
+          color:white;
+          font-family:-apple-system,sans-serif;
+        ">${place.bookNumber}</div>`,
+        className: '',
+        iconSize: [34, 34],
+        iconAnchor: [17, 17],
+      });
+
+      const marker = L.marker([place.latitude, place.longitude], { icon })
+        .addTo(map)
+        .on('click', () => onSelect(place));
+
+      markersRef.current.push(marker);
+    });
+  }
+
   return (
-    <>
-      <style>{`
-        .map-pin { display: flex; flex-direction: column; align-items: center; cursor: pointer; }
-        .pin-bubble {
-          background: #10b981;
-          border: 2.5px solid white;
-          border-radius: 50%;
-          width: 32px;
-          height: 32px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-          transition: transform 0.15s;
-        }
-        .map-pin:hover .pin-bubble { transform: scale(1.15); background: #059669; }
-        .pin-number { color: white; font-size: 11px; font-weight: 700; }
-        .pin-tip {
-          width: 0; height: 0;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-top: 8px solid #10b981;
-          margin-top: -1px;
-        }
-        .user-pin { font-size: 26px; line-height: 1; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
-        .leaflet-container { font-family: inherit; }
-      `}</style>
-      <div ref={mapRef} className="w-full h-full rounded-2xl overflow-hidden" />
-    </>
+    <div
+      ref={mapRef}
+      style={{ width: '100%', height: '100%', borderRadius: '16px', overflow: 'hidden' }}
+    />
   );
 }
