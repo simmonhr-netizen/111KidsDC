@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import { useSearchParams } from 'next/navigation';
 import { Place } from '@/types';
@@ -58,7 +58,6 @@ function MapPageContent() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100dvh', background: '#fdf8f0' }}>
-      {/* Top bar */}
       <div style={{ background: 'white', borderBottom: '1px solid #e7e5e4', padding: '12px 16px 10px', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <h1 style={{ fontWeight: 900, fontSize: 18, color: '#1c1917' }}>🗺️ Explore DC</h1>
@@ -75,7 +74,6 @@ function MapPageContent() {
         <p style={{ fontSize: 11, color: '#a8a29e', marginTop: 6 }}>{filtered.length} places</p>
       </div>
 
-      {/* Map/List area — takes all remaining space */}
       <div style={{ flex: 1, overflow: 'hidden', position: 'relative', padding: view === 'map' ? 8 : 0 }}>
         {view === 'map' ? (
           <div style={{ width: '100%', height: '100%' }}>
@@ -90,7 +88,7 @@ function MapPageContent() {
                   <div>
                     <p style={{ fontWeight: 700, fontSize: 14, color: '#1c1917' }}>{place.title}</p>
                     <p style={{ fontSize: 12, color: '#78716c', marginTop: 2 }}>{place.neighborhood}</p>
-                    <p style={{ fontSize: 12, color: '#57534e', marginTop: 4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{place.shortDescription}</p>
+                    <p style={{ fontSize: 12, color: '#57534e', marginTop: 4 }}>{place.shortDescription}</p>
                     {userLocation && (
                       <p style={{ fontSize: 12, color: '#10b981', marginTop: 4, fontWeight: 600 }}>
                         📍 {getDistance(userLocation[0], userLocation[1], place.latitude, place.longitude).toFixed(1)} mi away
