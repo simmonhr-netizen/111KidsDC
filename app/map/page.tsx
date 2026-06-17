@@ -64,4 +64,88 @@ function MapPageContent() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <h1 style={{ fontWeight: 900, fontSize: 18, color: '#1c1917', margin: 0 }}>🗺️ Explore DC</h1>
           <div style={{ display: 'flex', gap: 8 }}>
-            <button onClick={handleLocate} style={{ fontSize: 12, fontWeight: 700, background: userLocation ? '#f0fdf4' : '#f5f5f4', color: userLocation ?
+            <button onClick={handleLocate} style={{ fontSize: 12, fontWeight: 700, background: userLocation ? '#f0fdf4' : '#f5f5f4', color: userLocation ? '#059669' : '#57534e', border: `1px solid ${userLocation ? '#a7f3d0' : '#e7e5e4'}`, borderRadius: 999, padding: '6px 12px', cursor: 'pointer' }}>
+              📍 {userLocation ? 'Located!' : 'Near me'}
+            </button>
+            <button onClick={() => { setSelectedPlace(null); setView(view === 'map' ? 'list' : 'map'); }} style={{ fontSize: 12, fontWeight: 700, background: '#f5f5f4', color: '#57534e', border: '1px solid #e7e5e4', borderRadius: 999, padding: '6px 12px', cursor: 'pointer' }}>
+              {view === 'map' ? '📋 List' : '🗺️ Map'}
+            </button>
+          </div>
+        </div>
+
+        {/* Transport mode — only shows after location is set */}
+        {userLocation && (
+          <div style={{ display: 'flex', gap: 6, marginBottom: 8 }}>
+            {(['walking', 'car', 'metro'] as const).map((mode) => (
+              <button
+                key={mode}
+                onClick={() => setTransportMode(mode)}
+                style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: '4px 10px', border: '1px solid', cursor: 'pointer', transition: 'all 0.15s', background: transportMode === mode ? '#5b7fd4' : 'white', color: transportMode === mode ? 'white' : '#57534e', borderColor: transportMode === mode ? '#5b7fd4' : '#e7e5e4' }}
+              >
+                {mode === 'walking' ? '🚶 Walk' : mode === 'car' ? '🚗 Drive' : '🚇 Metro'}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <FilterBar active={activeFilters} onToggle={handleToggleFilter} />
+        <p style={{ fontSize: 11, color: '#a8a29e', marginTop: 6, marginBottom: 0 }}>{filtered.length} places</p>
+      </div>
+
+      {/* Map / List */}
+      <div style={{ flex: 1, overflow: 'hidden', position: 'relative', padding: view === 'map' ? 8 : 0, minHeight: 0, paddingBottom: view === 'map' ? 72 : 0 }}>
+        {view === 'map' ? (
+          <div style={{ width: '100%', height: '100%' }}>
+            <MapView places={filtered} onSelectPlace={setSelectedPlace} userLocation={userLocation ?? undefined} />
+          </div>
+        ) : (
+          <div style={{ overflowY: 'auto', height: '100%', padding: '12px 16px 100px' }}>
+            {filtered.map((place) => (
+              <div key={place.id} onClick={() => setSelectedPlace(place)}
+                style={{ background: 'white', borderRadius: 12, border: '1px solid #e7e5e4', padding: 14, marginBottom: 10, cursor: 'pointer' }}>
+                <div style={{ display: 'flex', gap: 10 }}>
+                  <span style={{ background: '#d1fae5', color: '#065f46', fontSize: 11, fontWeight: 700, padding: '3px 8px', borderRadius: 999, flexShrink: 0, alignSelf: 'flex-start' }}>#{place.bookNumber}</span>
+                  <div>
+                    <p style={{ fontWeight: 700, fontSize: 14, color: '#1c1917', margin: 0 }}>{place.title}</p>
+                    <p style={{ fontSize: 12, color: '#78716c', margin: '2px 0 0' }}>{place.neighborhood}</p>
+                    <p style={{ fontSize: 12, color: '#57534e', margin: '4px 0 0' }}>{place.shortDescription}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {filtered.length === 0 && (
+              <div style={{ textAlign: 'center', paddingTop: 60 }}>
+                <div style={{ fontSize: 40, marginBottom: 12 }}>🔍</div>
+                <p style={{ color: '#78716c', fontWeight: 600 }}>No places match those filters.</p>
+                <button onClick={() => setActiveFilters([])} style={{ marginTop: 10, color: '#10b981', fontSize: 14, textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer' }}>Clear filters</button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {selectedPlace && (
+          <div
+            onClick={() => setSelectedPlace(null)}
+            style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 9999, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', padding: '0 12px 90px' }}>
+            <div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxWidth: 420 }}>
+              <PlaceCard
+                place={selectedPlace}
+                onClose={() => setSelectedPlace(null)}
+                userLocation={userLocation ?? undefined}
+                transportMode={transportMode}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default function MapPage() {
+  return (
+    <Suspense fallback={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100dvh', color: '#78716c' }}>Loading...</div>}>
+      <MapPageContent />
+    </Suspense>
+  );
+}
