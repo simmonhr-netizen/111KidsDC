@@ -84,7 +84,7 @@ function MapPageContent() {
       </div>
 
       {/* Map / List */}
-      <div style={{ flex: 1, overflow: 'hidden', position: 'relative', padding: view === 'map' ? 8 : 0, minHeight: 0 }}>
+      <div style={{ flex: 1, overflow: 'hidden', position: 'relative', padding: view === 'map' ? 8 : 0, minHeight: 0, paddingBottom: view === 'map' ? 72 : 0 }}>
         {view === 'map' ? (
           <div style={{ width: '100%', height: '100%' }}>
             <MapView places={filtered} onSelectPlace={setSelectedPlace} userLocation={userLocation ?? undefined} />
