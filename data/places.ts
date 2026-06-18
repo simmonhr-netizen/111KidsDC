@@ -1,2460 +1,1299 @@
-// ============================================================
-// PLACES DATA — 111 Kids DC
-// ============================================================
-// Coordinates: Austin Graff's Google Map (83 places) +
-// best-available coordinates for remaining 28 places.
-// Names and book numbers match Austin's published list exactly.
-//
-// CONTENT STATUS: Descriptions and tips are PLACEHOLDERS.
-// Replace with licensed book content and set permissionStatus
-// to 'approved' when cleared.
-// ============================================================
-
-import { Place } from '@/types';
-
-export const places: Place[] = [
-  {
-    id: 'air-space-museum',
-    title: 'Air & Space Museum',
-    slug: 'air-space-museum',
-    bookNumber: 1,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8881601,
-    longitude: -77.0198679,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'albert-einstein-memorial',
-    title: 'Albert Einstein Memorial',
-    slug: 'albert-einstein-memorial',
-    bookNumber: 2,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8924028,
-    longitude: -77.0484139,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'alphabet-animals',
-    title: 'Alphabet Animals',
-    slug: 'alphabet-animals',
-    bookNumber: 3,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8812795,
-    longitude: -76.996185,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'art-museum-of-the-americas',
-    title: 'Art Museum of the Americas',
-    slug: 'art-museum-of-the-americas',
-    bookNumber: 4,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8928167,
-    longitude: -77.0415472,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'artechouse',
-    title: 'Artechouse',
-    slug: 'artechouse',
-    bookNumber: 5,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.88404,
-    longitude: -77.030245,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'barry-farm-aquatic-center',
-    title: 'Barry Farm Aquatic Center',
-    slug: 'barry-farm-aquatic-center',
-    bookNumber: 6,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8610237,
-    longitude: -76.9963202,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'beatles-first-us-concert',
-    title: 'Beatles\' First US Concert',
-    slug: 'beatles-first-us-concert',
-    bookNumber: 7,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8996,
-    longitude: -77.0436,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'because-science',
-    title: 'Because Science',
-    slug: 'because-science',
-    bookNumber: 8,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9238163,
-    longitude: -77.0415031,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'ben-s-chili-bowl',
-    title: 'Ben\'s Chili Bowl',
-    slug: 'ben-s-chili-bowl',
-    bookNumber: 9,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9172189,
-    longitude: -77.0287629,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'bethune-memorial',
-    title: 'Bethune Memorial',
-    slug: 'bethune-memorial',
-    bookNumber: 10,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8898084,
-    longitude: -76.9891606,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'the-big-chair',
-    title: 'The Big Chair',
-    slug: 'the-big-chair',
-    bookNumber: 11,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8654151,
-    longitude: -76.9896927,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'blue-rooster',
-    title: 'Blue Rooster',
-    slug: 'blue-rooster',
-    bookNumber: 12,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.891298,
-    longitude: -77.019965,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'boundary-stones',
-    title: 'Boundary Stones',
-    slug: 'boundary-stones',
-    bookNumber: 13,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8928652,
-    longitude: -76.9093453,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'bureau-of-engraving-and-printing',
-    title: 'Bureau of Engraving and Printing',
-    slug: 'bureau-of-engraving-and-printing',
-    bookNumber: 14,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8856618,
-    longitude: -77.03237,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'catacombs-of-dc',
-    title: 'Catacombs of DC',
-    slug: 'catacombs-of-dc',
-    bookNumber: 15,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9374799,
-    longitude: -76.9852201,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'dc-bouldering-project',
-    title: 'DC Bouldering Project',
-    slug: 'dc-bouldering-project',
-    bookNumber: 16,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9115984,
-    longitude: -77.0039973,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'dinosaur-pocket-park',
-    title: 'Dinosaur Pocket Park',
-    slug: 'dinosaur-pocket-park',
-    bookNumber: 17,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9318,
-    longitude: -77.0298,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'drum-circle',
-    title: 'Drum Circle',
-    slug: 'drum-circle',
-    bookNumber: 18,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9210639,
-    longitude: -77.0358109,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'dupont-underground',
-    title: 'Dupont Underground',
-    slug: 'dupont-underground',
-    bookNumber: 19,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9105084,
-    longitude: -77.0435324,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'east-potomac-mini-golf',
-    title: 'East Potomac Mini Golf',
-    slug: 'east-potomac-mini-golf',
-    bookNumber: 20,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8742,
-    longitude: -77.0294,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'exorcist-stairs',
-    title: 'Exorcist Stairs',
-    slug: 'exorcist-stairs',
-    bookNumber: 21,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9054811,
-    longitude: -77.07018,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'fala-the-scottish-terrier',
-    title: 'Fala The Scottish Terrier',
-    slug: 'fala-the-scottish-terrier',
-    bookNumber: 22,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8796,
-    longitude: -77.0369,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'fishing-at-fletcher-s-cove',
-    title: 'Fishing at Fletcher\'s Cove',
-    slug: 'fishing-at-fletcher-s-cove',
-    bookNumber: 23,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9117,
-    longitude: -77.0642,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'folger-s-printing-press',
-    title: 'Folger\'s Printing Press',
-    slug: 'folger-s-printing-press',
-    bookNumber: 24,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8892,
-    longitude: -77.0047,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'ford-s-theatre',
-    title: 'Ford\'s Theatre',
-    slug: 'ford-s-theatre',
-    bookNumber: 25,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8966765,
-    longitude: -77.0255908,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'fort-stevens',
-    title: 'Fort Stevens',
-    slug: 'fort-stevens',
-    bookNumber: 26,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.96436,
-    longitude: -77.0291697,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'frederick-douglass-house',
-    title: 'Frederick Douglass House',
-    slug: 'frederick-douglass-house',
-    bookNumber: 27,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8632818,
-    longitude: -76.9852102,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'game-of-frogs',
-    title: 'Game of Frogs',
-    slug: 'game-of-frogs',
-    bookNumber: 28,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9088927,
-    longitude: -76.9986593,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'georgetown-canal-boats',
-    title: 'Georgetown Canal Boats',
-    slug: 'georgetown-canal-boats',
-    bookNumber: 29,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9044,
-    longitude: -77.0607,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'giant-adirondack-chair',
-    title: 'Giant Adirondack Chair',
-    slug: 'giant-adirondack-chair',
-    bookNumber: 30,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8951,
-    longitude: -77.0283,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'giant-gumball-machine',
-    title: 'Giant Gumball Machine',
-    slug: 'giant-gumball-machine',
-    bookNumber: 31,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9056,
-    longitude: -77.0316,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'glass-forest',
-    title: 'Glass Forest',
-    slug: 'glass-forest',
-    bookNumber: 32,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.923939,
-    longitude: -77.1030811,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'go-go-museum-cafe',
-    title: 'Go-Go Museum & Cafe',
-    slug: 'go-go-museum-cafe',
-    bookNumber: 33,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8669324,
-    longitude: -76.9885875,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'habesha-market-carry-out',
-    title: 'Habesha Market & Carry Out',
-    slug: 'habesha-market-carry-out',
-    bookNumber: 34,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8847,
-    longitude: -76.9957,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'hillwood-estate',
-    title: 'Hillwood Estate',
-    slug: 'hillwood-estate',
-    bookNumber: 35,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9436362,
-    longitude: -77.0526363,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'hirshhorn-art-school',
-    title: 'Hirshhorn Art School',
-    slug: 'hirshhorn-art-school',
-    bookNumber: 36,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8881608,
-    longitude: -77.0229682,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'ice-cream-jubilee',
-    title: 'Ice Cream Jubilee',
-    slug: 'ice-cream-jubilee',
-    bookNumber: 37,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8772346,
-    longitude: -77.0043168,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'imaginations',
-    title: 'imagiNATIONS',
-    slug: 'imaginations',
-    bookNumber: 38,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8893,
-    longitude: -77.0261,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'immigrant-food',
-    title: 'Immigrant Food',
-    slug: 'immigrant-food',
-    bookNumber: 39,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.90856,
-    longitude: -76.9973563,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'international-spy-museum',
-    title: 'International Spy Museum',
-    slug: 'international-spy-museum',
-    bookNumber: 40,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8841419,
-    longitude: -77.025489,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'jokes-pay-phone',
-    title: 'Jokes Pay Phone',
-    slug: 'jokes-pay-phone',
-    bookNumber: 41,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9072,
-    longitude: -77.0369,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'kenilworth-aquatic-gardens',
-    title: 'Kenilworth Aquatic Gardens',
-    slug: 'kenilworth-aquatic-gardens',
-    bookNumber: 42,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9138,
-    longitude: -76.9408,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'kilroy-was-here',
-    title: 'Kilroy Was Here',
-    slug: 'kilroy-was-here',
-    bookNumber: 43,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8894073,
-    longitude: -77.04053,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'kingman-heritage-islands',
-    title: 'Kingman & Heritage Islands',
-    slug: 'kingman-heritage-islands',
-    bookNumber: 44,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8989,
-    longitude: -76.9728,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'kogod-courtyard',
-    title: 'Kogod Courtyard',
-    slug: 'kogod-courtyard',
-    bookNumber: 45,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8978267,
-    longitude: -77.023019,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'labyrinth-games-puzzles',
-    title: 'Labyrinth Games & Puzzles',
-    slug: 'labyrinth-games-puzzles',
-    bookNumber: 46,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8846717,
-    longitude: -76.9968619,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'langdon-skate-park',
-    title: 'Langdon Skate Park',
-    slug: 'langdon-skate-park',
-    bookNumber: 47,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9444,
-    longitude: -76.9961,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'library-animal-murals',
-    title: 'Library Animal Murals',
-    slug: 'library-animal-murals',
-    bookNumber: 48,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8891,
-    longitude: -77.0047,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'library-of-congress',
-    title: 'Library of Congress',
-    slug: 'library-of-congress',
-    bookNumber: 49,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.888684,
-    longitude: -77.004719,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'lincoln-s-cottage',
-    title: 'Lincoln\'s Cottage',
-    slug: 'lincoln-s-cottage',
-    bookNumber: 50,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9417217,
-    longitude: -77.0118456,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'lincoln-s-hitching-post',
-    title: 'Lincoln\'s Hitching Post',
-    slug: 'lincoln-s-hitching-post',
-    bookNumber: 51,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8999236,
-    longitude: -77.0310926,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'magic-tree-box',
-    title: 'Magic Tree Box',
-    slug: 'magic-tree-box',
-    bookNumber: 52,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9127975,
-    longitude: -77.0334291,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'matthew-henson-center',
-    title: 'Matthew Henson Center',
-    slug: 'matthew-henson-center',
-    bookNumber: 53,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8653427,
-    longitude: -77.0103205,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'marvin-gaye-rec-center',
-    title: 'Marvin Gaye Rec Center',
-    slug: 'marvin-gaye-rec-center',
-    bookNumber: 54,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8942,
-    longitude: -76.9486,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'merry-pin',
-    title: 'Merry Pin',
-    slug: 'merry-pin',
-    bookNumber: 55,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.979241,
-    longitude: -77.0266929,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'millennium-stage',
-    title: 'Millennium Stage',
-    slug: 'millennium-stage',
-    bookNumber: 56,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8958482,
-    longitude: -77.0556827,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'miller-cabin',
-    title: 'Miller Cabin',
-    slug: 'miller-cabin',
-    bookNumber: 57,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9639893,
-    longitude: -77.046351,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'miracle-theatre',
-    title: 'Miracle Theatre',
-    slug: 'miracle-theatre',
-    bookNumber: 58,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8816883,
-    longitude: -76.9952764,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'mission-muffins',
-    title: 'Mission Muffins',
-    slug: 'mission-muffins',
-    bookNumber: 59,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8987292,
-    longitude: -77.0111112,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'mlk-memorial-library-slide',
-    title: 'MLK Memorial Library Slide',
-    slug: 'mlk-memorial-library-slide',
-    bookNumber: 60,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.898469,
-    longitude: -77.0246579,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'monroe-street-market',
-    title: 'Monroe Street Market',
-    slug: 'monroe-street-market',
-    bookNumber: 61,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9329354,
-    longitude: -76.9951114,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'moonshot-studio',
-    title: 'Moonshot Studio',
-    slug: 'moonshot-studio',
-    bookNumber: 62,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8942157,
-    longitude: -77.0557009,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'municipal-fish-market',
-    title: 'Municipal Fish Market',
-    slug: 'municipal-fish-market',
-    bookNumber: 63,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8753,
-    longitude: -77.0218,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'musical-crossroads',
-    title: 'Musical Crossroads',
-    slug: 'musical-crossroads',
-    bookNumber: 64,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8910644,
-    longitude: -77.032614,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'national-building-museum',
-    title: 'National Building Museum',
-    slug: 'national-building-museum',
-    bookNumber: 65,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8977516,
-    longitude: -77.0176188,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'national-children-s-museum',
-    title: 'National Children\'s Museum',
-    slug: 'national-children-s-museum',
-    bookNumber: 66,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8942768,
-    longitude: -77.0298412,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'national-fire-dog-monument',
-    title: 'National Fire Dog Monument',
-    slug: 'national-fire-dog-monument',
-    bookNumber: 67,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8974309,
-    longitude: -77.0191016,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'national-herb-garden',
-    title: 'National Herb Garden',
-    slug: 'national-herb-garden',
-    bookNumber: 68,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9116655,
-    longitude: -76.969266,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'national-postal-museum',
-    title: 'National Postal Museum',
-    slug: 'national-postal-museum',
-    bookNumber: 69,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8982326,
-    longitude: -77.0081764,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'nationals-family-fun-day',
-    title: 'Nationals\' Family Fun Day',
-    slug: 'nationals-family-fun-day',
-    bookNumber: 70,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8731,
-    longitude: -77.0074,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'newton-apple-tree',
-    title: 'Newton Apple Tree',
-    slug: 'newton-apple-tree',
-    bookNumber: 71,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9419404,
-    longitude: -77.0656205,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'o-street-mansion',
-    title: 'O Street Mansion',
-    slug: 'o-street-mansion',
-    bookNumber: 72,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9084119,
-    longitude: -77.0458278,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'old-post-office-pavilion',
-    title: 'Old Post Office Pavilion',
-    slug: 'old-post-office-pavilion',
-    bookNumber: 73,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8939984,
-    longitude: -77.0291534,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'orangutan-crossing',
-    title: 'Orangutan Crossing',
-    slug: 'orangutan-crossing',
-    bookNumber: 74,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9297,
-    longitude: -77.0495,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'outdoor-skating-pavilion',
-    title: 'Outdoor Skating Pavilion',
-    slug: 'outdoor-skating-pavilion',
-    bookNumber: 75,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8742,
-    longitude: -77.0294,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'the-people-s-house',
-    title: 'The People\'s House',
-    slug: 'the-people-s-house',
-    bookNumber: 76,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8985971,
-    longitude: -77.0398051,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'planet-word-s-restrooms',
-    title: 'Planet Word\'s Restrooms',
-    slug: 'planet-word-s-restrooms',
-    bookNumber: 77,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9033,
-    longitude: -77.0302,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'plastic-bottle-cap-mural',
-    title: 'Plastic Bottle Cap Mural',
-    slug: 'plastic-bottle-cap-mural',
-    bookNumber: 78,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8669,
-    longitude: -76.9893,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'the-puzzle-post',
-    title: 'The Puzzle Post',
-    slug: 'the-puzzle-post',
-    bookNumber: 79,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8855189,
-    longitude: -76.9879607,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'river-horse-statue',
-    title: 'River Horse Statue',
-    slug: 'river-horse-statue',
-    bookNumber: 80,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8756,
-    longitude: -77.0218,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'rock-creek-park-horse-center',
-    title: 'Rock Creek Park Horse Center',
-    slug: 'rock-creek-park-horse-center',
-    bookNumber: 81,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9599553,
-    longitude: -77.0516936,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'rock-creek-tennis-center',
-    title: 'Rock Creek Tennis Center',
-    slug: 'rock-creek-tennis-center',
-    bookNumber: 82,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9539409,
-    longitude: -77.0386103,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'roosevelt-island',
-    title: 'Roosevelt Island',
-    slug: 'roosevelt-island',
-    bookNumber: 83,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8965459,
-    longitude: -77.0650259,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'rotunda-of-the-provinces',
-    title: 'Rotunda of the Provinces',
-    slug: 'rotunda-of-the-provinces',
-    bookNumber: 84,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8931374,
-    longitude: -77.018562,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'saint-elizabeths-campus',
-    title: 'Saint Elizabeths Campus',
-    slug: 'saint-elizabeths-campus',
-    bookNumber: 85,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8462,
-    longitude: -76.9902,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'saturday-morning-live',
-    title: 'Saturday Morning Live',
-    slug: 'saturday-morning-live',
-    bookNumber: 86,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8963386,
-    longitude: -77.0305172,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'sculpture-garden-ice-rink',
-    title: 'Sculpture Garden Ice Rink',
-    slug: 'sculpture-garden-ice-rink',
-    bookNumber: 87,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8913,
-    longitude: -77.0233,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'sidewalk-solar-system',
-    title: 'Sidewalk Solar System',
-    slug: 'sidewalk-solar-system',
-    bookNumber: 88,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8978,
-    longitude: -77.0282,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'southwest-duck-pond',
-    title: 'Southwest Duck Pond',
-    slug: 'southwest-duck-pond',
-    bookNumber: 89,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8787457,
-    longitude: -77.0197231,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'space-for-earth',
-    title: 'Space for Earth',
-    slug: 'space-for-earth',
-    bookNumber: 90,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8830649,
-    longitude: -77.0162786,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'the-space-window',
-    title: 'The Space Window',
-    slug: 'the-space-window',
-    bookNumber: 91,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9305946,
-    longitude: -77.0707808,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'stanton-park-toys',
-    title: 'Stanton Park Toys',
-    slug: 'stanton-park-toys',
-    bookNumber: 92,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8936247,
-    longitude: -76.9998636,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'sycamore-oak',
-    title: 'Sycamore & Oak',
-    slug: 'sycamore-oak',
-    bookNumber: 93,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.846155,
-    longitude: -76.9901826,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'tidal-basin-pedal-boats',
-    title: 'Tidal Basin Pedal Boats',
-    slug: 'tidal-basin-pedal-boats',
-    bookNumber: 94,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8823,
-    longitude: -77.0377,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'the-titanic-memorial',
-    title: 'The Titanic Memorial',
-    slug: 'the-titanic-memorial',
-    bookNumber: 95,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8719269,
-    longitude: -77.0193161,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'tivoli-s-astounding-magic',
-    title: 'Tivoli\'s Astounding Magic',
-    slug: 'tivoli-s-astounding-magic',
-    bookNumber: 96,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9278,
-    longitude: -77.0244,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'totem-poles',
-    title: 'Totem Poles',
-    slug: 'totem-poles',
-    bookNumber: 97,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8803377,
-    longitude: -76.9798571,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'transformers-statues',
-    title: 'Transformers Statues',
-    slug: 'transformers-statues',
-    bookNumber: 98,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9058298,
-    longitude: -77.0706743,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'transportation-walk',
-    title: 'Transportation Walk',
-    slug: 'transportation-walk',
-    bookNumber: 99,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8754015,
-    longitude: -77.002887,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'tregaron-conservancy',
-    title: 'Tregaron Conservancy',
-    slug: 'tregaron-conservancy',
-    bookNumber: 100,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9334427,
-    longitude: -77.0619072,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'unicorn-statues',
-    title: 'Unicorn Statues',
-    slug: 'unicorn-statues',
-    bookNumber: 101,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9745698,
-    longitude: -77.0540803,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'us-capitol-trees',
-    title: 'US Capitol Trees',
-    slug: 'us-capitol-trees',
-    bookNumber: 102,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.890803,
-    longitude: -77.00721,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'wangari-gardens',
-    title: 'Wangari Gardens',
-    slug: 'wangari-gardens',
-    bookNumber: 103,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9302033,
-    longitude: -77.0173474,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'washington-monument',
-    title: 'Washington Monument',
-    slug: 'washington-monument',
-    bookNumber: 104,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8894838,
-    longitude: -77.0352791,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'watergate-steps',
-    title: 'Watergate Steps',
-    slug: 'watergate-steps',
-    bookNumber: 105,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8892497,
-    longitude: -77.0525523,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'watermelon-house',
-    title: 'Watermelon House',
-    slug: 'watermelon-house',
-    bookNumber: 106,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9109529,
-    longitude: -77.0275696,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'wegmans-wonderplace',
-    title: 'Wegmans Wonderplace',
-    slug: 'wegmans-wonderplace',
-    bookNumber: 107,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8813412,
-    longitude: -77.029613,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'wharf-swings',
-    title: 'Wharf Swings',
-    slug: 'wharf-swings',
-    bookNumber: 108,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8781145,
-    longitude: -77.0238248,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'women-s-suffragists-mural',
-    title: 'Women\'s Suffragists Mural',
-    slug: 'women-s-suffragists-mural',
-    bookNumber: 109,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.8662954,
-    longitude: -76.9893076,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'yerevan-cafe',
-    title: 'Yerevan Cafe',
-    slug: 'yerevan-cafe',
-    bookNumber: 110,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9190881,
-    longitude: -77.0418289,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-  {
-    id: 'zipline-at-beauvoir',
-    title: 'Zipline at Beauvoir',
-    slug: 'zipline-at-beauvoir',
-    bookNumber: 111,
-    shortDescription: 'Description coming soon.',
-    longDescription: 'Full description coming soon.',
-    address: '',
-    latitude: 38.9300827,
-    longitude: -77.0669912,
-    neighborhood: '',
-    priceCategory: 'free',
-    ageRange: ['all'],
-    tags: [],
-    indoorOutdoor: 'both',
-    rainyDayFriendly: false,
-    strollerFriendly: true,
-    bathroomAvailable: false,
-    foodNearby: false,
-    parentTip: '',
-    permissionStatus: 'placeholder',
-  },
-];
-
-export default places;
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>DC: 111 Places for Kids </name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-nodesc-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-A52714-nodesc-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F9A825-nodesc-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-nodesc-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-F9A825-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-nodesc-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-nodesc-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFEA00-nodesc-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFEA00-nodesc-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFEA00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFEA00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFEA00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>2 Albert Einstein Memorial</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0484139,38.8924028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>62 Moonshot Studio</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0557009,38.8942157,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>4 Art Museum of the Americas</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0415472,38.8928167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>5 Artechouse</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.030245,38.88404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>6 Barry Farm Aquatic Center</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9963202,38.8610237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>11 The Big Chair</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9896927,38.8654151,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>42 Kenilworth Aquatic Gardens
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9403773,38.9123707,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>49 Library of Congress</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.004719,38.888684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>97 Totem Poles</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9798571,38.8803377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>91 The Space Window</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0707808,38.9305946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[25 Ford's Theatre]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0255908,38.8966765,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>15 Catacombs of DC</name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9852201,38.9374799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>32 Glass Forest</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.1030811,38.923939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>80 River Horse Statue
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0467423,38.8995067,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>40 International Spy Museum</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.025489,38.8841419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>35 Hillwood Estate</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0526363,38.9436362,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>39 Immigrant Food</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9973563,38.90856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>52 Magic Tree Box</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0334291,38.9127975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[46 Labyrinth Games & Puzzles]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9968619,38.8846717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>53 Matthew Henson Center</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0103205,38.8653427,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>60 MLK Memorial Library Slide</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0246579,38.898469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>48 Library Animal Murals
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0372547,38.9304634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>45 Kogod Courtyard</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.023019,38.8978267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>71 Newton Apple Tree</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0656205,38.9419404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>81 Rock Creek Park Horse Center</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0510175,38.9576828,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>22 Fala The Scottish Terrier 
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0429536,38.8834579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>100 Tregaron Conservancy</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0619072,38.9334427,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>107 Wegmans Wonderplace</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.029613,38.8813412,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>102 US Capitol Trees</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.00721,38.890803,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>108 Wharf Swings</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0238248,38.8781145,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>8 Because Science</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0415031,38.9238163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>101 Unicorn Statues</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0540803,38.9745698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>26 Fort Stevens</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0291697,38.96436,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>38 imagiNATIONS
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0165372,38.8884425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>77 Planet Word’s Restrooms
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0293655,38.9021492,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>54 Marvin Gaye Rec Center
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9134696,38.8917375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>59 Mission Muffins</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0111112,38.8987292,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>67 National Fire Dog Monument</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0191016,38.8974309,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>86 Saturday Morning Live</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0305172,38.8963386,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>66 National Children’s Museum</name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0298412,38.8942768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>95 The Titanic Memorial</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0193161,38.8719269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[93 Sycamore & Oak ]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9901826,38.846155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>103 Wangari Gardens</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0173474,38.9302033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>110 Yerevan Cafe</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0418289,38.9190881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>75 Outdoor Skating Pavilion 
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9699829,38.8779921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[44 Kingman & Heritage Islands 
+]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9680091,38.8954241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>18 Drum Circle</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0358109,38.9210639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>58 Miracle Theatre</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9952764,38.8816883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[96 Tivoli's Astounding Magic 
+]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0324936,38.9305294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>111 Zipline at Beauvoir</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0669912,38.9300827,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>72 O Street Mansion</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0458278,38.9084119,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>99 Transportation Walk</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.002887,38.8754015,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24 Folger’s Printing Press 
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0027563,38.8892957,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>47 Langdon Skate Park
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9741962,38.926537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>17 Dinosaur Pocket Park
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0216403,38.881768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>16 DC Bouldering Project</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0039973,38.9115984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>84 Rotunda of the Provinces</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.018562,38.8931374,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>78 Plastic Bottle Cap Mural
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0886351,38.9503751,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[1 Air & Space Museum]]></name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0198679,38.8881601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>70 Nationals’ Family Fun Day
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0074329,38.8730102,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>64 Musical Crossroads</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.032614,38.8910644,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>56 Millennium Stage</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0556827,38.8958482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>74 Orangutan Crossing
+</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0497844,38.9296156,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>37 Ice Cream Jubilee</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0043168,38.8772346,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>29 Georgetown Canal Boats
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0573773,38.9039893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>83 Roosevelt lsland</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0650259,38.8965459,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>94 Tidal Basin Pedal Boats
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0384557,38.8840761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>63 Municipal Fish Market
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0279242,38.8811307,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>105 Watergate Steps</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0525523,38.8892497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>43 Kilroy Was Here</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.04053,38.8894073,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14 Bureau of Engraving and Printing</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.03237,38.8856618,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>27 Frederick Douglass House</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9852102,38.8632818,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[9 Ben's Chili Bowl]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0287629,38.9172189,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>69 National Postal Museum</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0081764,38.8982326,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>20 East Potomac Mini Golf 
+</name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0268028,38.8746139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>87 Sculpture Garden Ice Rink
+</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0229397,38.8912874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>12 Blue Rooster</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.019965,38.891298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>13 Boundary Stones</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9093453,38.8928652,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3 Alphabet Animals</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.996185,38.8812795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>19 Dupont Underground</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0435324,38.9105084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>21 Exorcist Stairs</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.07018,38.9054811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>28 Game of Frogs</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9986593,38.9088927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>31 Giant Gumball Machine
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0243467,38.8970853,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>10 Bethune Memorial</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9891606,38.8898084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[50 Lincoln's Cottage]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0118456,38.9417217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>57 Miller Cabin</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.046351,38.9639893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>61 Monroe Street Market</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9951114,38.9329354,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>68 National Herb Garden</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.969266,38.9116655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>81 Rock Creek Planetarium</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0516936,38.9599553,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>73 Old Post Office Pavilion</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0291534,38.8939984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>82 Rock Creek Tennis Center</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0386103,38.9539409,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>79 The Puzzle Post</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9879607,38.8855189,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>7 Beatles’ First US Concert
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0029606,38.904934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>85 Saint Elizabeths Campus
+</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9953718,38.8471095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>89 Southwest Duck Pond</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0197231,38.8787457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>90 Space for Earth</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0162786,38.8830649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>92 Stanton Park Toys</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9998636,38.8936247,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>98 Transformers Statues</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0706743,38.9058298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>104 Washington Monument</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0352791,38.8894838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>106 Watermelon House</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0275696,38.9109529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[34 Habesha Market & Carry Out
+]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0237081,38.9163472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>76 The People’s House</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0398051,38.8985971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>30 Giant Adirondack Chair
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0704782,38.9128965,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[23 Fishing at Fletcher's Cove
+]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.1031196,38.9183817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[33 Go-Go Museum & Cafe]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9885875,38.8669324,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>55 Merry Pin</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0266929,38.979241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>65 National Building Museum</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0176188,38.8977516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[109 Women's Suffragists Mural]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.9893076,38.8662954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[51 Lincoln's Hitching Post]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0310926,38.8999236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>36 Hirshhorn Art School</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0229682,38.8881608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41 Jokes Pay Phone
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0692406,38.9660263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>88 Sidewalk Solar System
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0451893,38.9146463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
